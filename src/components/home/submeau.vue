@@ -18,7 +18,7 @@
             </el-submenu>
         </el-menu>
         <div class="div_bottom" @click="collapseClick">
-            <i :class="isCollapase?'el-icon-d-arrow-left':'el-icon-d-arrow-right'"/>
+            <i :class="isCollapase?'el-icon-d-arrow-right':'el-icon-d-arrow-left'"/>
         </div>
     </div>
 </template>
@@ -60,7 +60,10 @@
         color: gray;
         height: 30px;
         line-height: 30px;
-        background-color: #EEEEEE;
+        background-color: #c1c1c1;
         border-top: 0.5px solid gainsboro;
+    }
+    .div_bottom:hover{
+        cursor:pointer;
     }
 </style>
